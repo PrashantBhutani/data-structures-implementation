@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAXV 1000;           // maximum number of vertices possible in graph
+#define MAXV 1000           // maximum number of vertices possible in graph
 
 typedef struct {
   int dest;                  // destination vertex of this edge from this vertex 
@@ -16,4 +16,6 @@ typedef struct {
   edge *edges[MAXV];         // adjacency edge list for each vertex
 } graph;
 
-void initialize_graph(graph *g, int directed);
+void initialize_graph (graph *g, int directed);
+
+void read_graph (graph *g, int directed);
