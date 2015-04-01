@@ -26,3 +26,5 @@ void read_graph (graph *g, int directed);
 void insert_edge (graph *g, int edgeStart, int edgeEnd, int edgeWeight, int directed);
 
 void print_graph (graph *g);
+
+void bfs (graph *g, int start);
